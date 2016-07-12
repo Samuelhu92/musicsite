@@ -1,0 +1,779 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+    <style id='styles.css'>
+
+body {
+  font-size: 16px;
+  font-family: 'Coming Soon', cursive;
+}
+video {
+  display: inline-block;
+  vertical-align: baseline;
+}
+
+/** HEADER **/
+#header-nav {
+  position: relative;
+  height:100px;
+  top: 0;
+  right: 0;
+  left:0;
+  z-index: 9999;
+  display: block;
+  background-color: #a9a9a9;
+  opacity: 0.5;
+  border-radius: 0;
+  border: 0;
+}
+.container{
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 80%;
+  height:auto;
+  min-height:100%;
+  z-index: 1;
+  margin-left: 10%;
+}
+.navbar-header {
+position: absolute;
+left: 0;
+top: 0;
+width: 100%;
+height:100%;
+z-index: 1;
+}
+.navbar-brand {
+
+  padding-top: 25px;
+  margin-bottom: 50px;
+  background-color: #a9a9a9;
+}
+
+.navbar-brand h1 { /* Website name */
+  font-family: 'Nothing You Could Do', cursive;
+  color: #f8f8ff;
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+
+.navbar-brand p { /* Enjoy the moment! */
+  color: #f8f8ff;
+  text-transform: uppercase;
+  font-size: .7em;
+  margin-top: 15px;
+}
+#nav-list {
+  margin-top: 0px;
+  background-color: #a9a9a9;
+}
+#nav-list a {
+  color: #f8f8ff;
+  text-align: center;
+}
+#nav-list a:hover {
+  color: #87ceeb;
+  opacity: 0.5;
+}
+#nav-list a span {
+  font-size: 1em;
+}
+
+
+
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+  border: 1px solid #fff;
+}
+.navbar-header button.navbar-toggle {
+  clear: both;
+  margin-top: -30px;
+}
+/* END HEADER */
+
+/* FOOTER */
+.panel-footer {
+  padding-top: 35px;
+  padding-bottom: 30px;
+  background-color: #fff;
+  border-top: 1px solid #000;
+
+}
+.panel-footer div.row {
+  margin-bottom: 35px;
+}
+#hours, #address, #testimonials{
+  line-height: 2;
+  color: #000;
+  font-size: .8em;
+  line-height: 1.8;
+}
+#hours > span, #address > span {
+  font-size: 1.3em;
+}
+
+#testimonials {
+  font-style: italic;
+}
+#testimonials p:nth-child(2) {
+  margin-top: 25px;
+}
+.text-center {
+  color: #000
+}
+/* END FOOTER */
+
+
+
+/* HOME PAGE */
+
+
+.main {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+  top: -200px;
+  margin-bottom: -200px;
+  height:2000px;
+
+}
+/* full screen video*/
+.section {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+}
+
+.section-fullscreen{
+background-color: #f8f8ff;
+color: #ccc;
+min-height: 800px;
+}
+
+.page-content .video-fade{
+  position: fixed;
+}
+.page-content .section-fullscreen .section-background{
+z-index: -1;
+
+}
+.page-content .section-fullscreen .section-dance{
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  max-width: none;
+}
+.page-content .section-fullscreen .section-dance video{
+  width: 100%;
+  min-height: 800px;
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  max-width: none;
+  object-fit: cover;
+  transform: translateX(0) translateY(0);
+}
+
+}
+.page-content .section-fullscreen .large-fixed{
+  position: fixed;
+}
+.section-dance {
+  max-width: 1860px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+
+.section-fullscreen-overview .section-dance .video-fade, .section-fullscreen-overview .section-headline .section-image{
+  background-size: cover;
+  background-position:center center;
+}
+.page-content .video-fade{
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5) and (max-width: 1068px), only screen and (max-width: 1068px) and (min-resolution: 144dpi), only screen and (-webkit-min-device-pixel-ratio: 144) and (max-width: 1068px), only screen and (max-width: 1068px) and (min-resolution: 144dppx){
+.section-fullscreen-overview .section-dance .video-fade {
+  background-image: url(../images/background .png);
+}
+}
+.stopfade {
+   opacity: .5;
+}
+.page-content .section-fullscreen-overview .section-foreground{
+  opacity: 1;
+}
+.section-fullscreen .section-headline{
+  min-height: 600px;
+  height: 100vh;
+  position: relative;
+  z-index: 2;
+}
+.video .page-content .section-headline .section-image{
+  background-image: none;
+}
+.section-fullscreen .section-headline .section-image{
+  position: absolute;
+  z-index: -1;
+  min-height: 600px;
+  height: 100vh;
+  width: 100%;
+}
+.section-fullscreen .section-headline .section-content{
+  margin-top: 0;
+  margin-bottom: 0;
+  position: relative;
+  top: 50%;
+  left:50%;
+  transform: translateY(-50%);
+}
+h1 {
+  font-size: 3rem;
+  margin-top: 0;
+  letter-spacing: .3rem;
+}
+
+
+a {
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
+  transition: .6s background;
+}
+
+.section-fullscreen .glyphicon-menu-down {
+  position: absolute;
+  left: 50%;
+  margin: 0 auto;
+  z-index: 50;
+  text-align: center;
+  bottom: 40px;
+  width: 100px;
+  height: 100px;
+  top:95%;
+  border: none;
+  background-color: transparent;
+  font-size:xx-large;
+  color:#fff;
+}
+
+
+/*music section*/
+.music-recommendation {
+  height: 1200px;
+  width: 100%;
+  float: left;
+  clear:both;
+  position: relative;
+  border: 0px;
+
+}
+
+
+.music-background{
+  position: relative;
+  height: 100%;
+  top: 0;
+  background-color: #a5a0a0;
+}
+.music-play{
+  height: 12.5%;
+  top: 10%;
+}
+.music-img{
+  height:40%;
+  top:10%;
+ }
+#myCarousel{
+  border: 0;
+  display: block;
+  margin: auto;
+  height: 350px;
+  width: 400px;
+  position: relative;
+  max-width: 450px;
+  min-width: 300px;
+}
+.carousel-indicators {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    z-index: 15;
+    padding-left: 0;
+    text-align: center;
+    list-style: none;
+    left: 0;
+    margin-left: 0;
+}
+div.song-lyric{
+  border: 0;
+  display: block;
+  margin: auto;
+  height: 350px;
+  width: 400px;
+  position: relative;
+  max-width: 450px;
+  min-width: 300px;
+}
+.carousel-inner>.item>a>img, .carousel-inner>.item>img, .img-responsive, .thumbnail a>img, .thumbnail>img {
+    border: 0;
+    display: block;
+    margin: auto;
+    height: 350px;
+    width: 400px;
+    position: relative;
+    max-width: 450px;
+    min-width: 300px;
+  }
+
+.music-comment{
+  position: relative;
+  float: left;
+  height: 40%;
+}
+div.sentence{
+    padding-top: 200px;
+    border: 0;
+    display: block;
+    margin: auto;
+    width: 400px;
+    height: 350px;
+    position: relative;
+}
+span.comment-sentence {
+
+    display: block;
+    margin: auto;
+    font-family: 'San Francisco', 'PingFang SC', Arial, Sans;
+}
+.btn-default{
+  background-color: transparent;
+  display: block;
+  margin: auto;
+  position: relative;
+
+}
+.audio-player,
+.audio-player div,
+.audio-player h1,
+.audio-player a,
+.audio-player img,
+.audio-player span,
+.audio-player button {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+}
+
+div.audio-player {
+    position: relative;
+    display: block;
+    margin: auto;
+    width: 400px;
+    height: 70px;
+    max-width: 450px;
+    min-width: 300px;
+
+    background: #4c4e5a;
+    background: -webkit-linear-gradient(top, #4c4e5a 0%, #2c2d33 100%);
+    background: -moz-linear-gradient(top, #4c4e5a 0%, #2c2d33 100%);
+    background: -o-linear-gradient(top, #4c4e5a 0%, #2c2d33 100%);
+    background: -ms-linear-gradient(top, #4c4e5a 0%, #2c2d33 100%);
+    background: linear-gradient(top, #4c4e5a 0%, #2c2d33 100%);
+
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+
+.audio-player h1 {
+    position: absolute;
+    top: 20%;
+    padding-left: 5px;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    color: #ececec;
+    text-shadow: 1px 1px 1px rgba(0,0,0, .5);
+}
+
+.audio-player .cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#audio-player{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+
+/* END HOME PAGE */
+
+/********** Large devices only **********/
+@media (min-width: 1200px) {
+.main{
+  height: 1500px;
+}
+.music-recommendation{
+  height: 700px;
+}
+#myCarousel {
+  float:right;
+}
+div.audio-player{
+  float: right;
+}
+
+.music-comment{
+  float: left;
+  top: 10%
+}
+
+}
+
+/********** Medium devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+.main{
+  height: 1500px;
+}
+.music-recommendation{
+  height: 700px;
+}
+  #myCarousel {
+  float:right;
+}
+div.audio-player{
+  float: right;
+}
+
+.music-comment{
+  float: left;
+  top: 10%
+}
+
+}
+
+/********** Small devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  /* Home Page */
+
+  /* End Home Page */
+}
+
+/********** Extra small devices only **********/
+@media (min-width: 580px) and (max-width: 767px) {
+  /* Header */
+.nacbar-header {
+  position: relative;
+  top: 0;
+  right: 0;
+  left:0;
+  z-index: 9998;
+  display: block;
+  background-color: #a9a9a9;
+  opacity: 0.5;
+  border-radius: 0;
+  border: 0;
+
+}
+.navbar-default .navbar-collapse, .navbar-default .navbar-form{
+  border: none;
+}
+
+.navbar-toggle{
+    border: none;
+    margin-bottom: 25px;
+}
+  .navbar-brand #navbar-toggle {
+    padding-top: 10px;
+    height: 80px;
+  }
+  .navbar-brand h1 { /* Restaurant name */
+    padding-top: 10px;
+    font-size: 5vw; /* 1vw = 1% of viewport width */
+  }
+  .navbar-brand p { /* Kosher cert */
+    font-size: .6em;
+    margin-top: 12px;
+  }
+  .navbar-brand p img { /* Star-K */
+    height: 20px;
+  }
+
+  #collapsable-nav a { /* Collapsed nav menu text */
+    font-size: 1.2em;
+  }
+  #collapsable-nav a span { /* Collapsed nav menu glyph */
+    font-size: 1em;
+    margin-right: 5px;
+  }
+
+  #call-btn > a {
+    font-size: 1.5em;
+    display: block;
+    margin: -10px;
+    padding: -10px;
+    border: 0px;
+    color: #000;
+  }
+  #xs-deliver {
+    margin-top: 5px;
+    font-size: .7em;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+  }
+  /* End Header */
+
+  /* Footer */
+  .panel-footer section {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  .panel-footer section:nth-child(3) {
+    margin-bottom: 0; /* margin already exists on the whole row */
+  }
+  .panel-footer section hr {
+    width: 50%;
+  }
+  /* End Footer */
+
+  /* Home Page */
+  .container .jumbotron {
+    margin-top: 30px;
+    padding: 0;
+  }
+  #home-title{
+    width: 360px;
+    margin: 0 auto 15px;
+  }
+
+  .menu-item-photo {
+    margin-right: auto;
+  }
+  .menu-item-tile .menu-item-price {
+    text-align: center;
+  }
+  .menu-item-description {
+    text-align: center;;
+  }
+}
+
+
+/********** Super extra small devices Only :-) (e.g., iPhone 4) **********/
+@media (max-width: 479px) {
+  /* Header */
+  .navbar-brand h1 { /* Restaurant name */
+    padding-top: 5px;
+    font-size: 6vw;
+  }
+  /* End Header */
+
+  /* Home page */
+  #home-title {
+    width: 280px;
+    margin: 0 auto 15px;
+  }
+
+  .col-xxs-12 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    float: left;
+    width: 100%;
+  }
+}
+
+
+
+
+    </style>
+
+
+
+
+
+
+
+
+
+    <title>What I think when I listen</title>
+    <squarespace:script src="jquery-2.1.4.min.js" combo="true" />
+    <squarespace:script src="ajax-utils.js" combo="true" />
+    <link rel="stylesheet" href="styles/bootstrap.min.css">
+<!--
+    <script src="scripts/jquery-2.1.4.min.js"></script>
+    <script src="scripts/mediaelement-and-player.min.js"></script>
+    <link rel="stylesheet" href="styles/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="scripts/mediaelementplayer.min.css">
+ -->
+    <link href='https://fonts.googleapis.com/css?family=Coming+Soon' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Nothing+You+Could+Do' rel='stylesheet' type='text/css'>
+
+  </head>
+<body>
+  <header>
+    <nav id="header-nav" class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header">
+          <div class="navbar-brand">
+            <a href="index.html"><h1>WhatIthinkwhenIlisten.com</h1></a>
+            <p>
+              <span>enjoy the moment!</span>
+            </p>
+          </div>
+
+          <button type="button" class="navbar-toggle collapsed" id ="navbar-toggle" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div id="collapsable-nav" class="collapse navbar-collapse">
+           <ul id="nav-list" class="nav navbar-nav navbar-right">
+            <li id="navHomeButton" class="visible-xs active">
+              <a href="index.html">
+                <span><br class="hidden-xs"></span></a>
+            </li>
+            <li id="navMebuButton">
+              <a href="">
+                <span><br class="hidden-xs"></span></a>
+            </li>
+            <li>
+              <a href="#">
+                <span><br class="hidden-xs"></span></a>
+            </li>
+            <li>
+              <a href="#">
+                <span><br class="hidden-xs"></span></a>
+            </li>
+          </ul><!-- #nav-list -->
+        </div><!-- .collapse .navbar-collapse -->
+      </div><!-- .container -->
+    </nav><!-- #header-nav -->
+  </header>
+
+
+  <main class="main page-content" >
+    <section class="section section-fullscreen section-fullscreen-overview">
+      <div class="section-background large-fixed" style="pointer-events: auto;">
+        <div class="section-dance large-fixed" style="pointer-events: auto; -webkit-filter:blur(2px);opacity:1;">
+
+
+            <video autoplay id="bgvid">
+              <source src="/video/fullscreen1.mp4" type="video/mp4">
+            </video>
+            <div class="video-fade" style="opacity:0;"></div>
+        </div>
+      </div>
+      <div class="section-foreground" id="slogan" style="pointer-events: auto;">
+        <div class="section-headline">
+          <div class="section-image"></div>
+          <div class="section-content">
+            <h1 class="Slogan" style="opacity:1;transform: matrix(1,0,0,1,0,0);">Slogan</h1>
+          </div>
+          <button type="button" class="glyphicon glyphicon-menu-down" style="opacity:1;transform: matrix(1,0,0,1,0,0);">
+          </button>
+        </div>
+      </div>
+    </section>
+    <section class="music-recommendation music-recommendation-overview">
+
+      <div class="music-background">
+            <div class="music-img col-lg-6 col-md-6 col-sm-12 col-xs-12">
+              <div id="myCarousel" class="carousel slide">
+                  <ol class="carousel-indicators">
+                    <li class="item1 active"></li>
+                    <li class="item2"></li>
+                  </ol>
+                  <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                      <img class="cover" src="" alt="song">
+                    </div>
+                    <div class="item">
+                      <div class="song-lyric"><span class="lyric"></span>
+                      </div>
+                    </div>
+                    <a class="left carousel-control" href="#myCarousel" role="button">
+                      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#myCarousel" role="button">
+                      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                      <span class="sr-only">Next</span>
+                    </a>
+                  </div>
+              </div>
+            <div class="audio-player">
+            <h1 class="audio-title"></h1>
+            <audio id="audio-player" src="" type="audio/mp3" controls="controls"></audio>
+            </div>
+            </div>
+            <div class="music-comment col-lg-6 col-md-6 col-sm-12 col-xs-12">
+              <div class="sentence"><span class="comment-sentence"></span>
+              </div>
+              <button type="button" class="btn btn-default">let it go</button>
+            </div>
+      </div>
+
+    </section>
+          <!--End of #home-tiles-->
+  </main><!-- End of #main-content-->
+</body>
+
+  <footer class="panel-footer">
+    <div class="container">
+      <div class="row">
+        <section id="hours" class="col-sm-4">
+          <span></span>
+          <hr class="visible-xs">
+        </section>
+        <section id="address" class="col-sm-4">
+          <span>
+          <hr class="visible-xs">
+        </section>
+        <section id="testimonials" class="col-sm-4">
+          <p>"customer feedback1"</p>
+          <p>"customer feedback2"</p>
+        </section>
+      <div class="text-center">&copy; Copyright XXXXXXXXX</div>
+    </div>
+  </footer>
+
+  <!-- jQuery (Bootstrap JS plugins depend on it) -->
+<!--
+  <script src="scripts/jquery-2.1.4.min.js"></script>
+  <script src="scripts/bootstrap.min.js"></script>
+  <script src="scripts/ajax-utils.js"></script>
+  <script src="scripts/script.js"></script>
+ -->
+</body>
+</html>
+
+
+
+
